@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtpi0rs0eylk5"]
+
+[ext_resource type="Script" uid="uid://bgsigllipxgld" path="res://addons/magnet2d/magnet2d.gd" id="1_ig7tw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
+radius = 42.296574
+
+[node name="Main" type="Node2D" unique_id=39616962]
+
+[node name="Magnet2D" type="Area2D" parent="." unique_id=1695140025]
+script = ExtResource("1_ig7tw")
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet2D" unique_id=1018911841]
+shape = SubResource("CircleShape2D_0xm2m")
