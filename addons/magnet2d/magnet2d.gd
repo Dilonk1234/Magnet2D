@@ -1,4 +1,4 @@
-@icon("uid://eudnfuf2abbn") # magnet2d.svg
+@icon("uid://ddp133fouxljn") # magnet2d.svg
 extends Area2D
 class_name Magnet2D
 
