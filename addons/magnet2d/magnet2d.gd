@@ -11,6 +11,7 @@ class_name Magnet2D
 func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
+	
 	for x: PhysicsBody2D in get_overlapping_bodies():
 		if not x is RigidBody2D:
 			continue
