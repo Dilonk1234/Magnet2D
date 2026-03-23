@@ -1,0 +1,243 @@
+[gd_scene format=3 uid="uid://dtpi0rs0eylk5"]
+
+[ext_resource type="Script" uid="uid://bgsigllipxgld" path="res://addons/magnet2d/magnet2d.gd" id="1_hyser"]
+[ext_resource type="Texture2D" uid="uid://b4qo7jhsfwdrg" path="res://icon.svg" id="2_rc2ot"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
+radius = 278.11508
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(128, 128)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5t6at"]
+radius = 291.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hyser"]
+size = Vector2(386, 931)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hyser"]
+radius = 332.29504
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rc2ot"]
+size = Vector2(130, 130)
+
+[node name="Preview" type="Node2D" unique_id=39616962]
+
+[node name="Magnet1" type="Node2D" parent="." unique_id=220371402]
+
+[node name="Magnet2D" type="Area2D" parent="Magnet1" unique_id=1695140025 node_paths=PackedStringArray("target")]
+script = ExtResource("1_hyser")
+target = NodePath("Marker2D")
+strength = 100.0
+damping_strength = 15.0
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet1/Magnet2D" unique_id=1018911841]
+shape = SubResource("CircleShape2D_0xm2m")
+
+[node name="Marker2D" type="Marker2D" parent="Magnet1/Magnet2D" unique_id=33865616]
+gizmo_extents = 94.8
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Magnet1" unique_id=1379541849]
+position = Vector2(187, -407)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet1/RigidBody2D" unique_id=1496841612]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet1/RigidBody2D" unique_id=1855216317]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Magnet1" unique_id=463081433]
+position = Vector2(-227, -362)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet1/RigidBody2D2" unique_id=1916489387]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet1/RigidBody2D2" unique_id=897956134]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Magnet1" unique_id=77467375]
+position = Vector2(-20, -486)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet1/RigidBody2D3" unique_id=348851728]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet1/RigidBody2D3" unique_id=1183730890]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="Magnet2" type="Node2D" parent="." unique_id=1500535528]
+
+[node name="Magnet2D" type="Area2D" parent="Magnet2" unique_id=1804922873 node_paths=PackedStringArray("target")]
+script = ExtResource("1_hyser")
+target = NodePath("Marker2D")
+strength = 8.0
+damping_strength = 3.0
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet2/Magnet2D" unique_id=1172878571]
+position = Vector2(724, 13)
+shape = SubResource("CircleShape2D_5t6at")
+
+[node name="Marker2D" type="Marker2D" parent="Magnet2/Magnet2D" unique_id=53603108]
+position = Vector2(1464, -562)
+gizmo_extents = 77.5
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Magnet2" unique_id=875764284]
+position = Vector2(524, 76)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet2/RigidBody2D" unique_id=369725887]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet2/RigidBody2D" unique_id=1629295476]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="Magnet3" type="Node2D" parent="." unique_id=1882803615]
+position = Vector2(-1585, 215)
+
+[node name="Magnet2D" type="Area2D" parent="Magnet3" unique_id=1535909527 node_paths=PackedStringArray("target")]
+script = ExtResource("1_hyser")
+target = NodePath("Marker2D")
+strength = 8.0
+damping_strength = 3.0
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet3/Magnet2D" unique_id=1720538591]
+position = Vector2(724, -259.5)
+shape = SubResource("RectangleShape2D_hyser")
+
+[node name="Marker2D" type="Marker2D" parent="Magnet3/Magnet2D" unique_id=16334290]
+position = Vector2(714, -724)
+gizmo_extents = 77.5
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Magnet3" unique_id=1904747129]
+position = Vector2(721, 107)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet3/RigidBody2D" unique_id=429426427]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet3/RigidBody2D" unique_id=1069866272]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Magnet3" unique_id=1433962052]
+position = Vector2(820, -77)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet3/RigidBody2D2" unique_id=179066811]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet3/RigidBody2D2" unique_id=872017930]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Magnet3" unique_id=309001548]
+position = Vector2(594, -74)
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet3/RigidBody2D3" unique_id=1577188599]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet3/RigidBody2D3" unique_id=779720446]
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="Magnet4" type="Node2D" parent="." unique_id=975077679]
+position = Vector2(-1585, 215)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Magnet4" unique_id=1948557900]
+position = Vector2(-399, 0)
+
+[node name="Magnet2D" type="Area2D" parent="Magnet4/RigidBody2D" unique_id=287071383 node_paths=PackedStringArray("target")]
+script = ExtResource("1_hyser")
+target = NodePath("Marker2D")
+strength = 8.0
+damping_strength = 3.0
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet4/RigidBody2D/Magnet2D" unique_id=1434320301]
+position = Vector2(5, 5)
+shape = SubResource("CircleShape2D_hyser")
+
+[node name="Marker2D" type="Marker2D" parent="Magnet4/RigidBody2D/Magnet2D" unique_id=1781299951]
+position = Vector2(0, 1)
+gizmo_extents = 77.5
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet4/RigidBody2D" unique_id=917564952]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet4/RigidBody2D" unique_id=946093498]
+shape = SubResource("RectangleShape2D_rc2ot")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="Magnet4" unique_id=148185396]
+position = Vector2(-61, -20)
+
+[node name="Magnet2D" type="Area2D" parent="Magnet4/RigidBody2D2" unique_id=1420609598 node_paths=PackedStringArray("target")]
+script = ExtResource("1_hyser")
+target = NodePath("Marker2D")
+strength = 8.0
+damping_strength = 3.0
+metadata/_custom_type_script = "uid://bgsigllipxgld"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet4/RigidBody2D2/Magnet2D" unique_id=11540341]
+position = Vector2(5, 5)
+shape = SubResource("CircleShape2D_hyser")
+
+[node name="Marker2D" type="Marker2D" parent="Magnet4/RigidBody2D2/Magnet2D" unique_id=1440745643]
+position = Vector2(-1, -1)
+gizmo_extents = 77.5
+
+[node name="Sprite2D" type="Sprite2D" parent="Magnet4/RigidBody2D2" unique_id=634656554]
+texture = ExtResource("2_rc2ot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet4/RigidBody2D2" unique_id=241993082]
+shape = SubResource("RectangleShape2D_rc2ot")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1521279906]
+position = Vector2(-613, -48)
+zoom = Vector2(0.3, 0.3)
+
+[node name="UI" type="Control" parent="." unique_id=664373671]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TractorBeam" type="Label" parent="UI" unique_id=1727715085]
+layout_mode = 0
+offset_left = -1068.0
+offset_top = -593.0
+offset_right = -649.0
+offset_bottom = -505.0
+theme_override_font_sizes/font_size = 64
+text = "Tractor Beam"
+
+[node name="Magnet" type="Label" parent="UI" unique_id=668434002]
+layout_mode = 0
+offset_left = -136.0
+offset_top = -674.0
+offset_right = 283.0
+offset_bottom = -586.0
+theme_override_font_sizes/font_size = 64
+text = "Magnet"
+
+[node name="PhysicsBasedCannon" type="Label" parent="UI" unique_id=981274510]
+layout_mode = 0
+offset_left = 442.0
+offset_top = -391.0
+offset_right = 1127.0
+offset_bottom = -303.0
+theme_override_font_sizes/font_size = 64
+text = "Physics Based Cannon"
+
+[node name="Label2" type="Label" parent="UI" unique_id=765381347]
+layout_mode = 0
+offset_left = -2409.0
+offset_top = -328.0
+offset_right = -1169.0
+offset_bottom = -240.0
+theme_override_font_sizes/font_size = 64
+text = "2 RigidBodys being pulled towards each other"
+
+[node name="Label" type="Label" parent="UI" unique_id=1325772174]
+layout_mode = 0
+offset_left = -572.0
+offset_top = -826.0
+offset_right = 668.0
+offset_bottom = -738.0
+theme_override_font_sizes/font_size = 64
+text = "Turn on visible collision shapes in debug"

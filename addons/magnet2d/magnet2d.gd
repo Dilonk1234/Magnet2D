@@ -1,14 +1,19 @@
+@icon("uid://eudnfuf2abbn") # magnet2d.svg
 extends Area2D
 class_name Magnet2D
+
+## A Magnet2D will attract RigidBodys to its target.
 
 @export var target : Node2D ## The target a RigidBody will move be pulled towards.
 @export var strength := 20.0 ## The strength of the force pulling the RigidBody.
 @export var damping_strength := 5.0 ## The strength of the damping
 
 func _physics_process(delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
 	for x: PhysicsBody2D in get_overlapping_bodies():
 		if not x is RigidBody2D:
-			return
+			continue
 		
 		var direction := target.global_position - x.global_position
 		var distance := direction.length()
