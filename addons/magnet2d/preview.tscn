@@ -188,7 +188,7 @@ texture = ExtResource("2_rc2ot")
 shape = SubResource("RectangleShape2D_rc2ot")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1521279906]
-position = Vector2(-613, -48)
+position = Vector2(-566, -82)
 zoom = Vector2(0.3, 0.3)
 
 [node name="UI" type="Control" parent="." unique_id=664373671]

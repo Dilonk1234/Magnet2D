@@ -9,7 +9,8 @@ class_name Magnet2D
 @export var damping_strength := 5.0 ## The strength of the damping
 
 func _physics_process(delta: float) -> void:
-	if Engine.is_editor_hint():
+	if not target:
+		push_error(get_path(), " Needs a target. Magnet will do nothing.")
 		return
 	
 	for x: PhysicsBody2D in get_overlapping_bodies():
