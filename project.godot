@@ -13,11 +13,11 @@ config_version=5
 config/name="Magnet2D"
 config/tags=PackedStringArray("plugin")
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://ddp133fouxljn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/magnet2d/plugin.cfg", "res://addons/softbody2d/plugin.cfg")
+enabled=PackedStringArray("res://addons/magnet2d/plugin.cfg")
 
 [physics]
 
