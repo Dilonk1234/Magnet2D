@@ -171,6 +171,8 @@ script = ExtResource("1_hyser")
 target = NodePath("Marker2D")
 strength = 8.0
 damping_strength = 3.0
+ignore_x = null
+ignore_y = null
 metadata/_custom_type_script = "uid://bgsigllipxgld"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Magnet4/RigidBody2D2/Magnet2D" unique_id=11540341]
